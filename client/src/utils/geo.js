@@ -23,9 +23,10 @@ export function tileList() {
   const out = [];
   for (let tx = Math.floor(x0); tx <= Math.floor(x1); tx += 1) {
     for (let ty = Math.floor(y0); ty <= Math.floor(y1); ty += 1) {
+      const sub = Math.abs((tx + ty) % 4);
       out.push({
         key: `${tx}-${ty}`,
-        href: `https://tile.openstreetmap.org/${ZOOM}/${tx}/${ty}.png`,
+        href: `https://mt${sub}.google.com/vt/lyrs=s&x=${tx}&y=${ty}&z=${ZOOM}`,
         x: (tx - x0) * w,
         y: (ty - y0) * h,
         width: w + 0.5,

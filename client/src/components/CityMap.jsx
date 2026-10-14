@@ -137,9 +137,9 @@ export default function CityMap({
         ))}
       </g>
       <rect width={W} height={H} fill="#0b1118" opacity={0.1} pointerEvents="none" />
-      <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">
+      <a href="https://www.google.com/maps" target="_blank" rel="noreferrer">
         <text x={W - 6} y={H - 6} textAnchor="end" fontSize={9} fill="#8593a3" style={halo}>
-          OpenStreetMap contributors / CARTO
+          Google Earth Imagery
         </text>
       </a>
 

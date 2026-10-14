@@ -21,8 +21,8 @@ function createApp() {
         useDefaults: true,
         directives: {
           'upgrade-insecure-requests': null,
-          // OpenStreetMap raster tiles for the Chennai base map.
-          'img-src': ["'self'", 'data:', 'https://*.tile.openstreetmap.org', 'https://tile.openstreetmap.org', 'https://*.cartocdn.com', 'https://a.basemaps.cartocdn.com'],
+          // Satellite map tiles for the Chennai base map.
+          'img-src': ["'self'", 'data:', 'https://*.google.com', 'https://*.googleapis.com', 'https://*.googleusercontent.com', 'https://*.tile.openstreetmap.org', 'https://tile.openstreetmap.org', 'https://*.cartocdn.com', 'https://a.basemaps.cartocdn.com'],
         },
       },
     }),
