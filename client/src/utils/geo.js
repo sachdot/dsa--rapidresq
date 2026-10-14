@@ -25,7 +25,7 @@ export function tileList() {
     for (let ty = Math.floor(y0); ty <= Math.floor(y1); ty += 1) {
       out.push({
         key: `${tx}-${ty}`,
-        href: `https://a.basemaps.cartocdn.com/rastertiles/voyager/${ZOOM}/${tx}/${ty}.png`,
+        href: `https://tile.openstreetmap.org/${ZOOM}/${tx}/${ty}.png`,
         x: (tx - x0) * w,
         y: (ty - y0) * h,
         width: w + 0.5,
